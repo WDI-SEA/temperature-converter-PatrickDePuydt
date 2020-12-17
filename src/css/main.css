@@ -10,8 +10,3 @@
 @import 'layout.css';
 @import 'images.css';
 @import 'buttons.css';
-* {
-    border: 40px solid coral;
-    padding: 35%;
-    color: coral;
-}
