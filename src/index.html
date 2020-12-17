@@ -12,30 +12,34 @@
         <header>
             <h1>Temperature Converter</h1>
         </header>
+        
         <main>
             <article>
                 <form >
                     <input type="text" data-selector="input">
                     
                     <section>
-                        <input type="radio" data-selector="radio" name="two" value="One" id="three">
-                        <label for="">Farenheight</label>
+                        <input type="radio" data-selector="radio_fahrenheit" name="two" value="One" id="three">
+                        <label for="">Fahrenheit</label>
                     </section>
                     
                     <section>
-                        <input type="radio" data-selector="radio" name="two" value="One" id="three">
+                        <input type="radio" data-selector="radio_celcius" name="two" value="One" id="three">
                         <label for="">Celcius</label>
                     </section>
                     
-                    <input type="submit">
-                    </form>
-                <section>
-                    <div data-target="feedback"></div>
-                </section>
-               
+                    <section>
+                        <input type="submit">
+                        <button>Clear</button>
+                    </section>
+                </form>
             </article>
+            
+            <section>
+                <div data-target="feedback"></div>
+            </section>
+               
         </main>
     </body>
     <script src="./js/main.js"></script>
-
 </html>
