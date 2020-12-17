@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <title></title>
+</head>
+
+    <body>
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        
+        <main>
+            <article>
+                <form >
+                    <input type="text" data-selector="input">
+                    
+                    <section>
+                        <input type="radio" data-selector="radio_fahrenheit" name="radio_fahrenheit" id="radio_fahrenheit">
+                        <label for="">Fahrenheit</label>
+                    </section>
+                    
+                    <section>
+                        <input type="radio" data-selector="radio_celcius" name="radio_celcius" id="radio_celcius">
+                        <label for="">Celcius</label>
+                    </section>
+                    
+                    <section>
+                        <input type="submit">
+                        <button>Clear</button>
+                    </section>
+                </form>
+            </article>
+            
+            <section>
+                <div data-target="feedback"></div>
+            </section>
+               
+        </main>
+    </body>
+    <script src="./js/main.js"></script>
+</html>
