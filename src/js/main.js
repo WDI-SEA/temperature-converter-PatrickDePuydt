@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    // Variables
     const submitButton = document.querySelector("input[type=submit]"); // Submit button
     const feedback = document.querySelector("[data-target='feedback']"); // Feedback Section
     
+    // Functions
     const convertToCelcius = (temperature) =>  (temperature * 5/9) + 32; // (0°C × 9/5) + 32 = 32°F        
     const convertToFahrenheit = (temperature) => (temperature - 32) * 5/9; // (32°F − 32) × 5/9 = 0°C
-   
     
+    // Event Listeners
     submitButton.addEventListener("click", (event) => {
         event.preventDefault(); // Stop the form from submitting
         
@@ -14,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const isCelcius = document.querySelector("[data-selector='radio_celcius']").checked; // Check to see if the celcius radio button is checked
 
         if (isCelcius) {
-            feedback.innerHTML = convertToCelcius(input);
+            feedback.innerHTML = convertToCelcius(input); // Update the DOM
         } else {
-            feedback.innerHTML = convertToFahrenheit(input);
+            feedback.innerHTML = convertToFahrenheit(input); // Update the DOM
         }
 
     });
